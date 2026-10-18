@@ -1,0 +1,138 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef5ff;
+    color: #26364a;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #174ea6, #4c8bf5);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+}
+
+/* Main layout */
+main {
+    width: 90%;
+    max-width: 720px;
+    margin: 30px auto;
+}
+
+/* Cards */
+.card {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 14px;
+    box-shadow: 0 5px 15px rgba(23, 78, 166, 0.1);
+}
+
+.card h2 {
+    color: #174ea6;
+    margin-bottom: 12px;
+}
+
+.card > p {
+    margin-bottom: 15px;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #cbd8eb;
+    border-radius: 7px;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+input:focus {
+    outline: 2px solid #4c8bf5;
+}
+
+/* Buttons */
+button {
+    background-color: #2463c9;
+    color: white;
+    padding: 13px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 8px;
+}
+
+button:hover {
+    background-color: #174ea6;
+}
+
+.clear-button {
+    background-color: #667085;
+}
+
+/* Personalized result */
+.goal-box {
+    background-color: #eef5ff;
+    border-left: 4px solid #4c8bf5;
+    padding: 18px;
+    border-radius: 7px;
+    margin-top: 18px;
+}
+
+/* Inspiration messages */
+.inspiration-item {
+    background-color: #f5f8ff;
+    border-left: 4px solid #4c8bf5;
+    padding: 14px;
+    border-radius: 6px;
+    margin-top: 12px;
+}
+
+/* Footer */
+footer {
+    background-color: #17345e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    main {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    .card {
+        padding: 18px;
+    }
+}
