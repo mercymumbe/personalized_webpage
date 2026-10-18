@@ -1,33 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dream Big</title>
 </head>
+
 <body>
     <header>
-<h1>Lets Grow Together</h1>
-<p>Learn, grow and explore.</p>
-<p>Visionalize our dreams together</p>
+        <h1>Lets Grow Together</h1>
+        <p>Learn, grow and explore.</p>
+        <p>Visionalize our dreams together</p>
     </header>
     <main>
-            <section class="profile-card">
+        <section class="profile-card">
             <h2>Create Your Profile</h2>
 
             <form id="profileForm">
-               <label for="fullname"><strong>Full name:</strong></label>
-            <input type="text" name="fullname" id="fullname" required />
-            <br><br />
-            <label for="phone"><strong>Phone number:</strong></label>
-            <input type="tel" name="phone" id="phone" required />
-            <br><br />
-            <label for="email"><strong>Email:</strong></label>
-            <input type="email" name="email" id="email" required />
-            <br><br/>
-            <label for="age"><strong>Age:</strong></label>
-            <input type="number" name="age" id="age" min="23" max="60" />
+                <label for="fullname"><strong>Full name:</strong></label>
+                <input type="text" name="fullname" id="fullname" required />
+                <br><br />
+                <label for="phone"><strong>Phone number:</strong></label>
+                <input type="tel" name="phone" id="phone" required />
+                <br><br />
+                <label for="email"><strong>Email:</strong></label>
+                <input type="email" name="email" id="email" required />
+                <br><br />
+                <label for="age"><strong>Age:</strong></label>
+                <input type="number" name="age" id="age" min="18" max="120" />
+                <br></br>
+                <button type="submit">Start here</button>
+            </form>
+        </section>
+        <section id="welcomeCard" class="welcome-card" hidden>
+            <h2 id="welcomeMessage"></h2>
+            <p id="monthsMessage"></p>
+
+            <div class="age-card">
+                <h3>Age Eligibility</h3>
+                <p id="eligibilityMessage"></p>
+            </div>
+
+            <button type="button" id="resetButton">
+                Reset Profile
+            </button>
+            <section class="motivation-card">
+            <h2>Words to Inspire You</h2>
+            <p>Here are five reminders to keep you moving forward.</p>
+            <div id="motivationList"></div>
         </section>
     </main>
+
+    <footer>
+        <p>Believe in your dreams. Your journey starts today!</p>
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
