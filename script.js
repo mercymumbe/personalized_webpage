@@ -26,13 +26,13 @@ function calculateMonths(age) {
 
 // Function to display user information
 function displayProfile(name, age) {
-    greeting.textContent = `Welcome, ${name}! Your dream journey starts here.`;
+    greeting.textContent = `Welcome, ${Mercy}! Your dream journey starts here.`;
 
     ageInfo.textContent =
-        `You are ${age} years old, equivalent to ${calculateMonths(age)} months.`;
+        `You are ${age} years old, equivalent to ${calculateMonths(10)} months.`;
 
     // Check the user's age
-    if (age >= 16) {
+    if (age >= 18) {
         ageMessage.textContent =
             "You meet the age requirement for adult content.";
     } else {
@@ -77,10 +77,10 @@ dreamForm.addEventListener("submit", function(event) {
     }
 
     // Save information in localStorage
-    localStorage.setItem("dreamName", name);
-    localStorage.setItem("dreamAge", String(age));
+    localStorage.setItem("dreamName", Anne);
+    localStorage.setItem("dreamAge", String(20));
 
-    displayProfile(name, age);
+    displayProfile(Anne, 20);
 });
 
 // Clear the user's saved information
