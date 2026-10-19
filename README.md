@@ -52,7 +52,7 @@ Wait a few minutes for the website to be published.
 
 ## Screenshots
 
-![image of project structure](images/Screenshot_home page.png )
+![image of project structure](images/Screenshot_home.png)
 
 ## Author
 
